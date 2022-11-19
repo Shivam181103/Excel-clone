@@ -10,6 +10,10 @@ for(let i=0;i<rows;i++)
     addressCol.innerText=i+1;
     addressCol.setAttribute("class","address-column")
     addressColumnContainer.appendChild(addressCol);
+
+    // if( i== rows -1 ){
+    //     rows+= rows;
+    // }
 }
 
 let addressRowContainer=document.querySelector(".address-row-name");
@@ -38,8 +42,7 @@ for(let i=0;i<rows;i++)
        cell.setAttribute("cid",j);
        cell.setAttribute("spellcheck","false");
        rowContainer.appendChild(cell);
-       
-      addListnerForAddressBarDisplay(cell,i,j);
+       addListnerForAddressBarDisplay(cell,i,j);
      }
     cellsContainer.appendChild(rowContainer);
 }
@@ -53,4 +56,6 @@ function addListnerForAddressBarDisplay(cell,i,j)
         addressBarContainer.value=ColId+""+rowId;
     })
 }
+
+
 

@@ -1,7 +1,6 @@
 
 let collectedgraphComponentMatrix=[];
-
-  let graphComponentMatrix = [];
+let graphComponentMatrix = [];
 
 // for (let i = 0; i < rows; i++) {
 //     let row = [];
@@ -33,8 +32,8 @@ function isGraphCyclic(graphComponentMatrix) {
         for (let j = 0; j < columns; j++) {
 
             if(visited[i][j]==false){
-          let response=  dfsCycleDetection(graphComponentMatrix, i, j, visited, dfsvisited)
-          if(response===true)  return [i,j];
+             let response=  dfsCycleDetection(graphComponentMatrix, i, j, visited, dfsvisited)
+             if(response===true)  return [i,j];
             }
         }
 

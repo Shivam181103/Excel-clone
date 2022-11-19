@@ -37,7 +37,7 @@ openBtn.addEventListener("click",(e)=>{
             graphComponentMatrix=readSheetData[1];
             collectedSheetDB[collectedSheetDB.length-1]=sheetDB;
             collectedgraphComponentMatrix[collectedgraphComponentMatrix.length-1]=graphComponentMatrix;
-         handleSheetProperties(sheet);
+            handleSheetProperties(sheet);
         })
     })
 

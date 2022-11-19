@@ -19,8 +19,7 @@ addSheetButton.addEventListener("click",(e)=>{
    handleSheetRemoval(sheet);
    sheet.click();
 })
-
-
+ 
 function handleSheetRemoval(sheet){
     sheet.addEventListener("mousedown", (e)=>{
         if(e.button!==2) return;
@@ -51,9 +50,7 @@ function handleSheetRemoval(sheet){
     })
 
 
-}
-
-
+} 
 function handleSheetUIAfterRemoving(sheet)
 {
     sheet.remove();
@@ -65,7 +62,7 @@ for(let i=0;i<allSheetFolder.length;i++)
     sheetcontent.innerHTML=`Sheet${i+1}`;
     allSheetFolder[i].style.backgroundColor="transparent";
 }
-allSheetFolder[0].style.backgroundColor="grey";
+    allSheetFolder[0].style.backgroundColor="grey";
 
 }
 
@@ -90,10 +87,7 @@ firtscell.click();
 
    
 }
-
-
-
-
+ 
 function handleActiveSheetUI(sheet)
 {
     let allSheetFolder=document.querySelectorAll(".sheet-folder");

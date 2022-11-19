@@ -277,3 +277,31 @@ position: fixed;
     width: 5rem;
     text-align: center;
 }
+
+@media (max-width: 550px) {
+    
+    .cell-propsaction-cont{
+        width: 100vw;
+        overflow-x:scroll;
+        padding: 1rem 0;
+    }
+    .cell-propsaction-cont>*{
+        width: 1rem;
+
+        height: 0.6rem;
+        margin: 0.5rem ;
+    }
+    .formula-action-cont{
+        padding: 0.2rem 0;
+    }
+    .address-bar{
+        width: 2rem;
+
+    }
+    .formula-icon{
+        width: 1rem;
+    }
+    .sheet-add-icon{
+        width: 1rem;
+    }
+  }
